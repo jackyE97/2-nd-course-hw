@@ -1,56 +1,78 @@
-let a = 10;
-alert(20);
+//Number 1
+let a = Number(10);
+alert(a);
 
-let iphone = 2007;
-alert(2007);
+let b = 20;
+alert(b);
 
+//Number 2
+let iphone = Number(2007);
+alert(iphone);
+
+//Number 3
 let java = 'Eich';
-alert('Eich');
+alert(java);
 
-let apples = "10";
-let pineapples = "2";
+//Number 4
+let apples = Number (10);
+let pineapples = Number (2);
 alert( +apples + +pineapples);
 alert( +apples - +pineapples);
 alert( +apples * +pineapples);
 alert( +apples / +pineapples);
 
+//Number 5
 let result = 2 ** 5;
 alert(result);
 
-alert(9 % 2);
 
-let num = 1;
-num = num + 5;
-num = num - 3;
-num = num * 7;
-num = num / 3;
-num = num + 1;
-num = num - 1;
+//Number 6
+let cats = Number (9);
+let dogs = Number (2);
+alert(cats % dogs);
+
+//Number 7
+let num = 5;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num += 1;
+num -= 1;
 alert(num);
 
-let age = prompt('Сколько вам лет?');
+//Number 8
+let age = Number(prompt('Сколько вам лет?'));
 alert(age);
 
+//Number 9.0
 let user = {
-    name: "Jacky",
-    age: "27",
-    isAdmin: true,
-    cityOfResidence: "Estonia",
+    name: String('Jacky'),
+    age: Number(27),
+    isAdmin: Boolean(true),
 };
 
-user.age = "18";
-delete user["cityOfResidence"];
+//Number 9.1
+user['city of residence'] = "Estonia";
+
+//Number 9.2
+user.age = Number(18);
+
+//Number 9.3
+delete user['city of residence'];
 
 alert(user.name);
 alert(user.age);
-alert(user.cityOfResidence);
 alert(user.isAdmin);
+alert(user['city of residence']);
 
+//Number 9.4
 let info = prompt('Какую информацию хотите узнать о пользователе?');
-alert(user.info);
+alert(info);
 
+//Number 10
 let visitor = prompt('Привет, ИМЯ!');
-alert(visitor);
+alert('Привет' + ',' + visitor + '!');
 
 
 
