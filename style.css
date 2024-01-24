@@ -107,7 +107,12 @@ a {
 }
 .first__content {
   padding-top: 282px;
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+  padding-bottom: 282px;
 }
 .first__content_text {
   max-width: 584px;
@@ -115,7 +120,10 @@ a {
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  padding-bottom: 282px;
+}
+.first__content_image {
+  max-width: 485px;
+  max-height: 333px;
 }
 .first__title {
   color: #FFF;

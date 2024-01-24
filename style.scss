@@ -108,17 +108,21 @@ a {
     background-color: #000915;
     &__content {
         padding-top: 282px;
+        display: flex;
         flex-direction: row;
+        align-items: center;
+        column-gap: 135px;
+        padding-bottom: 282px;
         &_text{
             max-width: 584px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 32px;
-            padding-bottom: 282px;
             }
             &_image {
-                
+                max-width: 485px;
+                max-height: 333px;
             }
     }
         &__title {
