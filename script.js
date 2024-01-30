@@ -1,12 +1,12 @@
 //Number 1
-let a = Number(10);
+let a = 10;
 alert(a);
 
-let b = 20;
-alert(b);
+a = 20;
+alert(a);
 
 //Number 2
-let iphone = Number(2007);
+let iphone = 2007;
 alert(iphone);
 
 //Number 3
@@ -14,12 +14,12 @@ let java = 'Eich';
 alert(java);
 
 //Number 4
-let apples = Number (10);
-let pineapples = Number (2);
-alert( +apples + +pineapples);
-alert( +apples - +pineapples);
-alert( +apples * +pineapples);
-alert( +apples / +pineapples);
+let first = 10;
+let second = 2;
+alert( +first + +second);
+alert( +first - +second);
+alert( +first * +second);
+alert( +first / +second);
 
 //Number 5
 let result = 2 ** 5;
@@ -27,9 +27,9 @@ alert(result);
 
 
 //Number 6
-let cats = Number (9);
-let dogs = Number (2);
-alert(cats % dogs);
+let firstNum = 9;
+let SecondNum = 2;
+alert(firstNum % SecondNum);
 
 //Number 7
 let num = 5;
@@ -46,10 +46,11 @@ let age = Number(prompt('Сколько вам лет?'));
 alert(age);
 
 //Number 9.0
+
 let user = {
-    name: String('Jacky'),
-    age: Number(27),
-    isAdmin: Boolean(true),
+    name: 'Jacky',
+    age: 27,
+    isAdmin: true,
 };
 
 //Number 9.1
@@ -68,13 +69,8 @@ alert(user['city of residence']);
 
 //Number 9.4
 let info = prompt('Какую информацию хотите узнать о пользователе?');
-alert(info);
+alert(user[info]);
 
 //Number 10
 let visitor = prompt('Привет, ИМЯ!');
-alert('Привет' + ',' + visitor + '!');
-
-
-
-
-
+alert('Привет' + ', ' + visitor + '!');
