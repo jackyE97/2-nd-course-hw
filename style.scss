@@ -7,7 +7,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-  }
+}
 
 a {
     text-decoration: none;
@@ -26,11 +26,13 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     &__content {
         padding-top: 217px;
         display: flex;
         flex-direction: column;
     }
+
     &__title {
         width: 788px;
         color: #FFF;
@@ -40,6 +42,7 @@ a {
         line-height: normal;
         padding-bottom: 32px;
     }
+
     &__subtitle {
         width: 481px;
         color: #FFF;
@@ -49,10 +52,11 @@ a {
         line-height: 32px;
         color: #FFF;
         padding-bottom: 44px;
+
         &_bold {
             font-weight: 700;
-          }
-}
+        }
+    }
 }
 
 .button {
@@ -68,10 +72,16 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #EB443F;
 }
 
 .main {
     background: #000;
+
     &__content {
         padding-top: 128px;
         display: flex;
@@ -80,14 +90,22 @@ a {
         gap: 32px;
         padding-bottom: 128px;
     }
+
     &__conteiner {
         position: relative;
+        transition: all 0.3s;
     }
-    &__photo {
+    &__conteiner:hover {
+        border-radius: 16px;
+        border: 3px solid #44D2FF;
+    }
+
+    &__game {
         max-width: 379px;
         max-height: 300px;
         border-radius: 16px;
     }
+
     &__text {
         position: absolute;
         bottom: 32px;
@@ -97,15 +115,17 @@ a {
         font-style: normal;
         font-weight: 600;
         line-height: 32px;
+
         &:visited {
             color: #FFF;
             text-decoration: none;
         }
-    } 
+    }
 }
 
 .first {
     background-color: #000915;
+
     &__content {
         padding-top: 282px;
         display: flex;
@@ -113,32 +133,36 @@ a {
         align-items: center;
         column-gap: 135px;
         padding-bottom: 282px;
-        &_text{
+
+        &_text {
             max-width: 584px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 32px;
-            }
-            &_image {
-                max-width: 485px;
-                max-height: 333px;
-            }
+        }
+
+        &_image {
+            max-width: 485px;
+            max-height: 333px;
+        }
     }
-        &__title {
-            color: #FFF;
-            font-size: 48px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-        &__subtitle {
-            color: #FFF;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 32px;
-        }
+
+    &__title {
+        color: #FFF;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__subtitle {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+    }
 }
+
 @import 'mobile';
-  

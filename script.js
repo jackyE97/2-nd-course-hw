@@ -1,12 +1,14 @@
+//2.2
+/* 
 //Number 1
-let a = Number(10);
+let a = 10;
 alert(a);
 
-let b = 20;
-alert(b);
+a = 20;
+alert(a);
 
 //Number 2
-let iphone = Number(2007);
+let iphone = 2007;
 alert(iphone);
 
 //Number 3
@@ -14,12 +16,12 @@ let java = 'Eich';
 alert(java);
 
 //Number 4
-let apples = Number (10);
-let pineapples = Number (2);
-alert( +apples + +pineapples);
-alert( +apples - +pineapples);
-alert( +apples * +pineapples);
-alert( +apples / +pineapples);
+let first = 10;
+let second = 2;
+alert( first + second);
+alert( first - second);
+alert( first * second);
+alert( first / second);
 
 //Number 5
 let result = 2 ** 5;
@@ -27,9 +29,9 @@ alert(result);
 
 
 //Number 6
-let cats = Number (9);
-let dogs = Number (2);
-alert(cats % dogs);
+let firstNum = 9;
+let SecondNum = 2;
+alert(firstNum % SecondNum);
 
 //Number 7
 let num = 5;
@@ -46,10 +48,11 @@ let age = Number(prompt('Сколько вам лет?'));
 alert(age);
 
 //Number 9.0
+
 let user = {
-    name: String('Jacky'),
-    age: Number(27),
-    isAdmin: Boolean(true),
+    name: 'Jacky',
+    age: 27,
+    isAdmin: true,
 };
 
 //Number 9.1
@@ -68,13 +71,78 @@ alert(user['city of residence']);
 
 //Number 9.4
 let info = prompt('Какую информацию хотите узнать о пользователе?');
-alert(info);
+alert(user[info]);
 
 //Number 10
 let visitor = prompt('Привет, ИМЯ!');
-alert('Привет' + ',' + visitor + '!');
+alert('Привет' + ', ' + visitor + '!');
+*/
+
+//2.3
+
+//#1
+let password = prompt('Введите пароль');
+let message;
+if (password === 'sky') {
+    message = 'Пароль введен верно';
+} else {
+    message = 'Пароль введен неправильно';
+} alert(message);
+
+//#2
+
+let c = 5;
+c = 0;
+c = 10;
+c = -3;
+c = 2;
+
+if (c > 0 && c < 10) {
+    message = 'Верно';
+} else { message = 'Неверно' };
+alert(message);
 
 
+//#3
+
+let d = 105;
+let e = 15;
+
+if (d > 100 || e > 100) {
+    message = 'Верно';
+} else { message = 'Неверно' };
+alert(message);
 
 
+//#4
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
 
+//#5
+
+let monthNumber = Number(prompt('Введите номер месяца:'));
+switch (monthNumber) {
+    case 1:
+    case 2:
+    case 12:
+        alert('Зима');
+        break;
+    case 3:
+    case 4:
+    case 5:
+        alert('Весна');
+        break;
+    case 6:
+    case 7:
+    case 8:
+        alert('Лето');
+        break;
+    case 9:
+    case 10:
+    case 11:
+        alert('Осень');
+        break;
+    default:
+        alert('Нет такого месяца');
+}
