@@ -18,6 +18,7 @@ alert(java);
 //Number 4
 let first = 10;
 let second = 2;
+
 alert( first + second);
 alert( first - second);
 alert( first * second);
@@ -31,6 +32,7 @@ alert(result);
 //Number 6
 let firstNum = 9;
 let SecondNum = 2;
+
 alert(firstNum % SecondNum);
 
 //Number 7
@@ -71,18 +73,23 @@ alert(user['city of residence']);
 
 //Number 9.4
 let info = prompt('Какую информацию хотите узнать о пользователе?');
+
 alert(user[info]);
 
 //Number 10
 let visitor = prompt('Привет, ИМЯ!');
+
 alert('Привет' + ', ' + visitor + '!');
 */
 
+
+/*
 //2.3
 
 //#1
 let password = prompt('Введите пароль');
 let message;
+
 if (password === 'sky') {
     message = 'Пароль введен верно';
 } else {
@@ -128,21 +135,74 @@ switch (monthNumber) {
     case 12:
         alert('Зима');
         break;
+
     case 3:
     case 4:
     case 5:
         alert('Весна');
         break;
+
     case 6:
     case 7:
     case 8:
         alert('Лето');
         break;
+
     case 9:
     case 10:
     case 11:
         alert('Осень');
         break;
+
     default:
         alert('Нет такого месяца');
+}
+*/
+//DOP
+
+//7
+
+let input = prompt("Пожалуйста, введите любое число");
+
+let number = Number(input);
+
+if (isNaN(number)) {
+    alert("Вы ввели не число, попробуйте ещё");
+} else {
+    if (number % 2 === 0) {
+        alert("Число четное");
+    } else {
+        alert("Число нечетное");
+    }
+}
+
+//8
+
+let OS = prompt("Введите вашу операционную систему (0 - IOS, 1 - Android)");
+
+if (OS === '0') {
+    console.log("Установите версию приложения для IOS по ссылке");
+} else if (OS === '1') {
+    console.log("Установите версию приложения для Android по ссылке");
+}
+
+
+//9
+
+let clientOS = prompt("Введите вашу операционную систему (0 - IOS, 1 - Android)");
+let clientDeviceYear = Number(prompt("Введите год создания вашего устройства"));
+
+if (clientOS === '0') {
+    if (clientDeviceYear >= 2015) {
+         console.log("Установите версию приложения для iOS по ссылке");
+    } else {
+         console.log("Установите облегченную версию приложения для iOS по ссылке");
+    }
+
+} else if (clientOS === '1') {
+    if (clientDeviceYear >= 2015) {
+         console.log("Установите версию приложения для Android по ссылке");
+    } else {
+         console.log("Установите облегченную версию приложения для Android по ссылке");
+    }
 }
