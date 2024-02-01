@@ -83,18 +83,16 @@ alert('Привет' + ', ' + visitor + '!');
 */
 
 
-/*
 //2.3
+//1
+let message = prompt('Введите пароль');
+let password = 'sky';
 
-//#1
-let password = prompt('Введите пароль');
-let message;
-
-if (password === 'sky') {
-    message = 'Пароль введен верно';
+if (message === password) {
+    password = 'Пароль введен верно';
 } else {
-    message = 'Пароль введен неправильно';
-} alert(message);
+    password = 'Пароль введен неправильно';
+} alert(password);
 
 //#2
 
@@ -157,7 +155,7 @@ switch (monthNumber) {
     default:
         alert('Нет такого месяца');
 }
-*/
+
 //DOP
 
 //7
