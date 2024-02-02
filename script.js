@@ -1,5 +1,5 @@
 //2.2
-/* 
+
 //Number 1
 let a = 10;
 alert(a);
@@ -80,7 +80,7 @@ alert(user[info]);
 let visitor = prompt('Привет, ИМЯ!');
 
 alert('Привет' + ', ' + visitor + '!');
-*/
+
 
 //2.3
 
