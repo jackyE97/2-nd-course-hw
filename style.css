@@ -156,6 +156,10 @@ a {
   max-height: 333px;
 }
 
+.second-game {
+  background-color: #000915;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -185,24 +189,28 @@ a {
   .main__game {
     max-width: 343px;
   }
-  .first__content {
+  .content {
     padding-top: 51px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0px;
   }
-  .first__content_text {
+  .content_text {
     padding-bottom: 64px;
   }
-  .first__content_image {
+  .image {
     max-width: 344px;
     max-height: 236px;
   }
-  .first__title {
+  .image_second-game {
+    padding-bottom: 81px;
+  }
+  .title {
     width: 343px;
     font-size: 32px;
   }
-  .first__subtitle {
+  .subtitle {
     width: 343px;
     font-size: 14px;
     line-height: 22px;
