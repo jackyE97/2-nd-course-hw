@@ -19,10 +19,10 @@ alert(java);
 let first = 10;
 let second = 2;
 
-alert( first + second);
-alert( first - second);
-alert( first * second);
-alert( first / second);
+alert(first + second);
+alert(first - second);
+alert(first * second);
+alert(first / second);
 
 //Number 5
 let result = 2 ** 5;
@@ -204,3 +204,4 @@ if (clientOS === '0') {
         console.log("Установите облегченную версию приложения для Android по ссылке");
     }
 }
+
