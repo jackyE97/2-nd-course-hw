@@ -125,47 +125,47 @@ a {
     }
 }
 
-.first {
+.first-game {
     background-color: #000915;
+}
 
-    &__content {
-        padding-top: 282px;
+.content {
+    padding-top: 282px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 135px;
+    padding-bottom: 282px;
+
+    &_text {
+        max-width: 584px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        column-gap: 135px;
-        padding-bottom: 282px;
-
-        &_text {
-            max-width: 584px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 32px;
-        }
-
-        &_image {
-            width: 100%;
-            max-width: 485px;
-            max-height: 333px;
-        }
-    }
-
-    &__title {
-        color: #FFF;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    &__subtitle {
-        color: #FFF;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 32px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
     }
 }
+.title {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.image {
+    width: 100%;
+    max-width: 485px;
+    max-height: 333px;
+}
+
 
 @import 'mobile';

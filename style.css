@@ -113,10 +113,11 @@ a {
   text-decoration: none;
 }
 
-.first {
+.first-game {
   background-color: #000915;
 }
-.first__content {
+
+.content {
   padding-top: 282px;
   display: flex;
   flex-direction: row;
@@ -125,31 +126,34 @@ a {
        column-gap: 135px;
   padding-bottom: 282px;
 }
-.first__content_text {
+.content_text {
   max-width: 584px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
 }
-.first__content_image {
-  width: 100%;
-  max-width: 485px;
-  max-height: 333px;
-}
-.first__title {
+
+.title {
   color: #FFF;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.first__subtitle {
+
+.subtitle {
   color: #FFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: 32px;
+}
+
+.image {
+  width: 100%;
+  max-width: 485px;
+  max-height: 333px;
 }
 
 @media (max-width: 767px) {
