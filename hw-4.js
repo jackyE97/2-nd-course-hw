@@ -2,8 +2,10 @@
 //HW-4
 
 //1
-const hi = 'Привет ';
-console.log(hi.repeat(2));
+
+for (let i = 1; i < 3; i++) {
+    alert("Привет");
+}
 
 //2
 let i = 1;
