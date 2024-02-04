@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section class="top center">
         <div class="top__content">
-        <h1 class="top__title">Добро пожаловать на мой сайт!</h1>
-        <h2 class="top__subtitle">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="top__subtitle_bold">поехали</span> и <span class="top__subtitle_bold">приступай</span></h2>
-        <button class="button">Поехали!</button>
+            <h1 class="top__title">Добро пожаловать на мой сайт!</h1>
+            <h2 class="top__subtitle">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span
+                    class="top__subtitle_bold">поехали</span> и <span class="top__subtitle_bold">приступай</span></h2>
+            <button class="button">Поехали!</button>
         </div>
     </section>
     <section class="main center">
         <div class="main__content">
             <div class="main__conteiner">
-            <img class="main__game" src="photo/1.jpg" alt="first photo">
+                <img class="main__game" src="photo/1.jpg" alt="first photo">
                 <div>
                     <a href="#" class="main__text">Игра 1</a>
                 </div>
             </div>
             <div class="main__conteiner">
-            <img class="main__game" src="photo/2.jpg" alt="second photo">
+                <img class="main__game" src="photo/2.jpg" alt="second photo">
                 <div>
                     <a href="#" class="main__text">Игра 2</a>
                 </div>
             </div>
             <div class="main__conteiner">
-            <img class="main__game" src="photo/3.jpg" alt="third photo">
+                <img class="main__game" src="photo/3.jpg" alt="third photo">
                 <div>
                     <a href="#" class="main__text">Игра 3</a>
                 </div>
@@ -43,7 +46,8 @@
         <div class="content">
             <div class="content_text">
                 <h1 class="title">Времена года!</h1>
-                <h2 class="subtitle">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</h2>
+                <h2 class="subtitle">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
+                    времени года он относится</h2>
                 <button class="button">Играть!</button>
             </div>
             <div>
@@ -51,9 +55,23 @@
             </div>
         </div>
     </section>
+    <section class="second-game center">
+        <div class="content">
+            <div class="content_text">
+                <h1 class="title">Запомни слова</h1>
+                <h2 class="subtitle">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</h2>
+                <button onclick="month()" class="button">Играть!</button>
+            </div>
+            <div>
+                <img class="image image_second-game" src="./photo/second.png" alt="illustration">
+            </div>
+        </div>
+    </section>
     <footer>
+        <p>2024</p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./hw-4.js"></script>
 </body>
+
 </html>
