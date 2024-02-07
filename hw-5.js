@@ -1,6 +1,6 @@
 //HW-5
-
-//1
+/*
+///1
 function findSmaller(num1, num2) {
     return (num1 < num2) ? num1 : num2;
 };
@@ -91,14 +91,15 @@ function season() {
     let month = Number(prompt("Введите номер месяца"));
 
     if ((month >= 1 && month <= 2) || month === 12) {
-        return `Зима`
+        alert(`Зима`)
     } else if (month >= 3 && month <= 5) {
-        return `Весна`
+        alert(`Весна`)
     } else if (month >= 6 && month <= 8) {
-        return `Лето`
+        alert(`Лето`)
     } else if (month >= 9 && month <= 11) {
-        return `Осень`
+        alert(`Осень`)
     } else {
-        return `Такого месяца нет!`
+        alert(`Такого месяца нет!`)
     }
 }
+*/

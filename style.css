@@ -53,26 +53,6 @@ a {
   font-weight: 700;
 }
 
-.button {
-  background: #9C0332;
-  border-radius: 30px;
-  border-color: transparent;
-  height: 48px;
-  width: 234px;
-  align-items: center;
-  text-align: center;
-  color: #FFF;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  transition: all 0.3s;
-}
-
-.button:hover {
-  background-color: #EB443F;
-}
-
 .main {
   background: #000;
 }
@@ -113,8 +93,15 @@ a {
   text-decoration: none;
 }
 
-.first-game {
+.game {
   background-color: #000915;
+}
+.game__first-game {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  align-items: center;
 }
 
 .content {
@@ -126,11 +113,10 @@ a {
        column-gap: 135px;
   padding-bottom: 282px;
 }
-.content_text {
-  max-width: 584px;
+.content__text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
 }
 
@@ -156,7 +142,61 @@ a {
   max-height: 333px;
 }
 
-.second-game {
+.button {
+  background: #9C0332;
+  border-radius: 30px;
+  border-color: transparent;
+  height: 48px;
+  width: 234px;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #EB443F;
+}
+
+.third-game {
+  background-image: url(photo/third.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.third-game__content {
+  padding-top: 276px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 288px;
+}
+.third-game__title {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+}
+.third-game__subtitle {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 12px;
   background-color: #000915;
 }
 
@@ -194,9 +234,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-bottom: 0px;
   }
-  .content_text {
+  .content__text {
+    align-items: center;
     padding-bottom: 64px;
   }
   .image {
@@ -207,12 +249,29 @@ a {
     padding-bottom: 81px;
   }
   .title {
-    width: 343px;
     font-size: 32px;
   }
   .subtitle {
+    max-width: 343px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .third-game__content {
+    padding-top: 51px;
+    align-items: center;
+    padding-bottom: 487px;
+  }
+  .third-game__title {
+    width: 343px;
+    text-align: center;
+    font-size: 32px;
+  }
+  .third-game__subtitle {
     width: 343px;
     font-size: 14px;
     line-height: 22px;
+    text-align: center;
+    padding-bottom: 32px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -59,26 +59,6 @@ a {
     }
 }
 
-.button {
-    background: #9C0332;
-    border-radius: 30px;
-    border-color: transparent;
-    height: 48px;
-    width: 234px;
-    align-items: center;
-    text-align: center;
-    color: #FFF;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    transition: all 0.3s;
-}
-
-.button:hover {
-    background-color: #EB443F;
-}
-
 .main {
     background: #000;
 
@@ -125,8 +105,16 @@ a {
     }
 }
 
-.first-game {
+.game {
     background-color: #000915;
+
+    &__first-game {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        align-items: center;
+    }
 }
 
 .content {
@@ -137,11 +125,10 @@ a {
     column-gap: 135px;
     padding-bottom: 282px;
 
-    &_text {
-        max-width: 584px;
+    &__text {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 32px;
     }
 }
@@ -168,7 +155,64 @@ a {
     max-height: 333px;
 }
 
-.second-game {
+.button {
+    background: #9C0332;
+    border-radius: 30px;
+    border-color: transparent;
+    height: 48px;
+    width: 234px;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #EB443F;
+}
+
+.third-game {
+    background-image: url(photo/third.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+        padding-top: 276px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding-bottom: 288px;
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+    }
+
+    &__subtitle {
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        text-align: center;
+    }
+}
+
+.footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 12px;
     background-color: #000915;
 }
 
