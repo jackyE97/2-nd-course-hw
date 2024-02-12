@@ -43,9 +43,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding-bottom: 0px;
 
-        &_text {
+        &__text {
+            align-items: center;
             padding-bottom: 64px;
         }
     }
@@ -59,13 +61,34 @@
     }
 
     .title {
-        width: 343px;
         font-size: 32px;
     }
 
     .subtitle {
-        width: 343px;
+        max-width: 343px;
         font-size: 14px;
         line-height: 22px;
+        text-align: center;
+    }
+    .third-game {
+        &__content {
+            padding-top: 51px;
+            align-items: center;
+            padding-bottom: 487px;
+        }
+
+        &__title {
+            width: 343px;
+            text-align: center;
+            font-size: 32px;
+        }
+
+        &__subtitle {
+            width: 343px;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            padding-bottom: 32px;
+        }
     }
 }
