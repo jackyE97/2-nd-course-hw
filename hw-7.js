@@ -121,8 +121,8 @@ function playWordGame() {
     words = words.sort(() => Math.random() - 0.5);   //перемешали элементы массива
     alert(`Перемешанные слова: ${words}`);  //выводим массив
 
-    let firstWord = prompt('Чему равнялся первый элемент массива?');
-    let lastWord = prompt('Чему равнялся последний элемент массива?');
+    let firstWord = prompt('Какой фрукт был первым?');
+    let lastWord = prompt('Какой фрукт был последним?');
 
     if (firstWord === words[0] && lastWord === words[6]) {
         alert('Поздравляем, вы угадали оба слова!');
