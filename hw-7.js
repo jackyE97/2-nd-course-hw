@@ -92,26 +92,24 @@ console.log('Дата через 73 дня:', futureDate);
 
 //10
 
-function formatDate(date) {
-
+function formatDateAndTime(date) {
     const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
-    const days = ['понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота', 'воскресенье'];
+    const days = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+
     const day = date.getDate();
     const month = months[date.getMonth()];
-    const year = date.getYear();
+    const year = date.getFullYear();
     const weekday = days[date.getDay()];
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
 
-    const formattedDate = `Дата: ${day}${month}${year} - это ${weekday}.`;
-    const formattedTime = `Время: ${hours}:${minutes}:${seconds}.`;
-
-    return formatDate + formattedTime;
+    return `Дата: ${day} ${month} ${year} - это ${weekday}. Время: ${hours}:${minutes}:${seconds}`;
 }
 
-let currentDate = new Date();
-let formattedDateTime = formatDate(currentDate);
+let currentFullDate = new Date();
+let formattedDateTime = formatDateAndTime(currentFullDate);
+
 console.log(formattedDateTime);
 
 
@@ -126,14 +124,16 @@ function playWordGame() {
     let firstWord = prompt('Чему равнялся первый элемент массива?');
     let lastWord = prompt('Чему равнялся последний элемент массива?');
 
-    if (firstWord === words[0] && lastWord === words[words.lenght - 1]) {
+    if (firstWord === words[0] && lastWord === words[6]) {
         alert('Поздравляем, вы угадали оба слова!');
-    } else if (firstWord === words[0] || lastWord === words[words.lenght - 1]) {
+    } else if (firstWord === words[0] || lastWord === words[6]) {
         alert('Вы были близки к победе!');
     } else {
         alert('Вы ответили неверно!');
     }
 }
+
+
 
 
 

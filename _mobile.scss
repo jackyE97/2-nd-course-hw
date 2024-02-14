@@ -6,9 +6,11 @@
     }
 
     .top {
+        height: 735px;
         &__content {
             padding-top: 238px;
             align-items: center;
+            padding-bottom: 238px;
         }
 
         &__title {
@@ -46,9 +48,28 @@
         justify-content: center;
         padding-bottom: 0px;
 
+        &__first-game {
+            padding-bottom: 85px;
+        }
+
+        &__second-game {
+            flex-direction: column-reverse;
+            padding-bottom: 90px;
+        }
+
         &__text {
             align-items: center;
             padding-bottom: 64px;
+
+            &_first-game {
+                padding-top: 0px;
+                padding-bottom: 64px;
+            }
+        
+            &_second-game {
+                padding-top: 0px;
+                padding-bottom: 64px;
+            }
         }
     }
 
@@ -56,7 +77,7 @@
         max-width: 344px;
         max-height: 236px;
         &_second-game {
-            padding-bottom: 81px;
+            padding-bottom: 0px;
         }
     }
 
