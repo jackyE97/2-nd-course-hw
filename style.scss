@@ -118,18 +118,26 @@ a {
 }
 
 .content {
-    padding-top: 282px;
     display: flex;
     flex-direction: row;
     align-items: center;
     column-gap: 135px;
-    padding-bottom: 282px;
 
     &__text {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 32px;
+
+        &_first-game {
+            padding-top: 276px;
+            padding-bottom: 288px;
+        }
+
+        &_second-game {
+            padding-top: 282px;
+            padding-bottom: 282px;
+        }
     }
 }
 
@@ -150,7 +158,6 @@ a {
 }
 
 .image {
-    width: 100%;
     max-width: 485px;
     max-height: 333px;
 }

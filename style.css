@@ -105,19 +105,25 @@ a {
 }
 
 .content {
-  padding-top: 282px;
   display: flex;
   flex-direction: row;
   align-items: center;
   -moz-column-gap: 135px;
        column-gap: 135px;
-  padding-bottom: 282px;
 }
 .content__text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 32px;
+}
+.content__text_first-game {
+  padding-top: 276px;
+  padding-bottom: 288px;
+}
+.content__text_second-game {
+  padding-top: 282px;
+  padding-bottom: 282px;
 }
 
 .title {
@@ -137,7 +143,6 @@ a {
 }
 
 .image {
-  width: 100%;
   max-width: 485px;
   max-height: 333px;
 }
@@ -205,9 +210,13 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .top {
+    height: 735px;
+  }
   .top__content {
     padding-top: 238px;
     align-items: center;
+    padding-bottom: 238px;
   }
   .top__title {
     width: 343px;
@@ -237,8 +246,23 @@ a {
     justify-content: center;
     padding-bottom: 0px;
   }
+  .content__first-game {
+    padding-bottom: 85px;
+  }
+  .content__second-game {
+    flex-direction: column-reverse;
+    padding-bottom: 90px;
+  }
   .content__text {
     align-items: center;
+    padding-bottom: 64px;
+  }
+  .content__text_first-game {
+    padding-top: 0px;
+    padding-bottom: 64px;
+  }
+  .content__text_second-game {
+    padding-top: 0px;
     padding-bottom: 64px;
   }
   .image {
@@ -246,7 +270,7 @@ a {
     max-height: 236px;
   }
   .image_second-game {
-    padding-bottom: 81px;
+    padding-bottom: 0px;
   }
   .title {
     font-size: 32px;
