@@ -1,5 +1,5 @@
 //hw-7
-
+/*
 //1
 
 let str = "js";
@@ -113,6 +113,8 @@ let formattedDateTime = formatDateAndTime(currentFullDate);
 console.log(formattedDateTime);
 
 
+
+
 //11 Game 2
 
 function playWordGame() {
@@ -134,12 +136,6 @@ function playWordGame() {
 }
 
 
-
-
-
-
-
-
 //from hw-5
 //GAME 1
 
@@ -158,3 +154,5 @@ function season() {
         alert(`Такого месяца нет!`)
     }
 }
+
+*/
